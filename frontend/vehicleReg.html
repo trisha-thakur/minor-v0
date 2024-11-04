@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration - RTO Blockchain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-[100dvh]">
+        <header class="header">
+            <!-- Same header as before -->
+        </header>
+
+        <main class="main-content">
+            <div class="container mx-auto px-4 py-8">
+                <h1 class="text-3xl font-bold mb-8">Vehicle Registration</h1>
+                
+                <form class="max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-6">Vehicle Details</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block mb-2">Vehicle Make</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="block mb-2">Vehicle Model</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div>
+                                <label class="block mb-2">Chassis Number</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="block mb-2">Engine Number</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <h2 class="text-xl font-semibold mb-6 mt-8">Owner Details</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block mb-2">Owner Name</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="block mb-2">Aadhar Number</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label class="block mb-2">Address</label>
+                            <textarea class="form-textarea" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h3 class="text-lg font-semibold mb-4">Required Documents</h3>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block mb-2">Purchase Invoice</label>
+                                    <input type="file" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label class="block mb-2">Insurance Certificate</label>
+                                    <input type="file" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label class="block mb-2">Pollution Certificate</label>
+                                    <input type="file" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <button type="submit" class="btn-primary">Register Vehicle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <!-- Same footer as before -->
+        </footer>
+    </div>
+</body>
+</html>

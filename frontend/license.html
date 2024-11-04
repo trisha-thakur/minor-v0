@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Challan Payment - RTO Blockchain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-[100dvh]">
+        <header class="header">
+            <!-- Same header as before -->
+        </header>
+
+        <main class="main-content">
+            <div class="container mx-auto px-4 py-8">
+                <h1 class="text-3xl font-bold mb-8">Pay e-Challan</h1>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label class="block mb-2">Enter Challan Number or Vehicle Number</label>
+                            <div class="flex gap-4">
+                                <input type="text" class="form-input flex-1" placeholder="Enter number...">
+                                <button class="btn-secondary">Search</button>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h2 class="text-xl font-semibold mb-4">Challan Details</h2>
+                            
+                            <div class="border rounded-lg p-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-gray-600">Challan Number</p>
+                                        <p class="font-semibold">CH123456789</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Vehicle Number</p>
+                                        <p class="font-semibold">MH12AB1234</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Violation</p>
+                                        <p class="font-semibold">Speed Limit Exceeded</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Date & Time</p>
+                                        <p class="font-semibold">01/01/2024 10:30 AM</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Location</p>
+                                        <p class="font-semibold">Mumbai-Pune Expressway</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Fine Amount</p>
+                                        <p class="font-semibold text-red-600">₹1,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h2 class="text-xl font-semibold mb-4">Payment Method</h2>
+                            
+                            <div class="space-y-4">
+                                <div class="border rounded-lg p-4 flex items-center gap-4">
+                                    <input type="radio" name="payment" id="upi">
+                                    <label for="upi">UPI</label>
+                                </div>
+                                <div class="border rounded-lg p-4 flex items-center gap-4">
+                                    <input type="radio" name="payment" id="card">
+                                    <label for="card">Credit/Debit Card</label>
+                                </div>
+                                <div class="border rounded-lg p-4 flex items-center gap-4">
+                                    <input type="radio" name="payment" id="netbanking">
+                                    <label for="netbanking">Net Banking</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <button class="btn-primary">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <!-- Same footer as before -->
+        </footer>
+    </div>
+</body>
+</html>
